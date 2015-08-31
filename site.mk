@@ -28,7 +28,7 @@ GLUON_SITE_PACKAGES := \
         haveged
 
 
-DEFAULT_GLUON_RELEASE := 0.7.1.1-duese
+DEFAULT_GLUON_RELEASE := 0.7.1.2-duese
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
