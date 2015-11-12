@@ -1,5 +1,4 @@
 GLUON_SITE_PACKAGES := \
-	gluon-authorized-keys \
         gluon-mesh-batman-adv-15 \
         gluon-alfred \
         gluon-announced \
@@ -28,16 +27,13 @@ GLUON_SITE_PACKAGES := \
         haveged
 
 
-GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+DEFAULT_GLUON_RELEASE := exp$(shell date '+%y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
-GLUON_BRANCH ?= stable
+GLUON_BRANCH ?= experimental
 export GLUON_BRANCH
-
-GLUON_TARGET ?= ar71xx-generic
-export GLUON_TARGET
 
 GLUON_LANGS ?= en de
