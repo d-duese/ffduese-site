@@ -1,5 +1,4 @@
 GLUON_SITE_PACKAGES := \
-	gluon-authorized-keys \
         gluon-mesh-batman-adv-15 \
         gluon-alfred \
         gluon-announced \
